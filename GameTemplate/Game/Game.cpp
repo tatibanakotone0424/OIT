@@ -27,8 +27,13 @@ bool Game::Start()
 void Game::Update()
 {
 	CQuaternion aRot;
-	aRot.SetRotationDeg({0.0f,1.0f,0.0f},50.0f);
+	aRot.SetRotationDeg({0.0f,1.0f,0.0f},5.0f);
 
 	m_rotaion *= aRot;
 	m_skinModelRender->SetRotation(m_rotaion);
+
+	m_position.x += Pad((0).GetLStickCF())*-20.0f;
+	m_skinModelRender->SetPosition(m_position);
+
+ 
 }
