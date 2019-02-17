@@ -33,7 +33,7 @@ void Game::Update()
 	m_skinModelRender->SetRotation(m_rotaion);
 
 	m_position.x += Pad(0).GetLStickXF()*-20.0f;
-	m_moveSpeed.x = Pad(0).GetLStickXF()*100.0f;
+	m_moveSpeed.x = Pad(0).GetLStickXF()*20.0f;
 	m_skinModelRender->SetPosition(m_position);
 
 }

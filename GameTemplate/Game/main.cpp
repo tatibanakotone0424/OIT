@@ -3,6 +3,7 @@
  */
 #include "stdafx.h"
 #include "Game.h"
+#include "hoge.h"
 
 namespace {
 	/*!
