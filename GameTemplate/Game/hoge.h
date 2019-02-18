@@ -7,6 +7,5 @@ public:
 	//bool Start();
 	void Update();
 	prefab::CFontRender*m_fontRender = nullptr;
-	int kazu = 0;
 };
 

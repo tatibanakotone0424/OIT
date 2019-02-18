@@ -12,8 +12,11 @@ public:
 	bool Start();
 	void Update();
 	prefab::CSkinModelRender* m_skinModelRender = nullptr;		//スキンモデルレンダラー。
-	CQuaternion m_rotaion = CQuaternion::Identity;
-	CVector3 m_position = CVector3::Zero;
-	CVector3 m_moveSpeed = CVector3::Zero;
+	CQuaternion m_rotaion = CQuaternion::Identity;         //回すやつ　
+	CVector3 m_position = CVector3::Zero;                  //動くやつ
+	CVector3 m_moveSpeed = CVector3::Zero;                 //スピード
+	prefab::CDirectionLight* m_rit = nullptr;    //ライトのやつ
+
+
 };
 
