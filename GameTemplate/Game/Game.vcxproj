@@ -1763,6 +1763,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Gamecamera.cpp" />
+    <ClCompile Include="haikei.cpp" />
     <ClCompile Include="hoge.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -1788,6 +1790,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Gamecamera.h" />
+    <ClInclude Include="haikei.h" />
     <ClInclude Include="hoge.h" />
     <CLInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />

@@ -20,6 +20,8 @@
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="hoge.cpp" />
+    <ClCompile Include="Gamecamera.cpp" />
+    <ClCompile Include="haikei.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -28,6 +30,8 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="hoge.h" />
+    <ClInclude Include="Gamecamera.h" />
+    <ClInclude Include="haikei.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Game.rc">
