@@ -22,6 +22,9 @@
     <ClCompile Include="hoge.cpp" />
     <ClCompile Include="Gamecamera.cpp" />
     <ClCompile Include="haikei.cpp" />
+    <ClCompile Include="Food.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="okasi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -32,6 +35,9 @@
     <ClInclude Include="hoge.h" />
     <ClInclude Include="Gamecamera.h" />
     <ClInclude Include="haikei.h" />
+    <ClInclude Include="Food.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="okasi.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Game.rc">
@@ -43,6 +49,15 @@
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
     <MeshContentTask Include="Assets\modelData\tageru.fbx">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\chara.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\#1ringo.fbx">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\#2ringo.FBX">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
   </ItemGroup>

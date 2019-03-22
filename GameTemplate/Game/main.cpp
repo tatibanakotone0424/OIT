@@ -65,7 +65,7 @@ namespace {
 		//Bloom
 		initParam.graphicsConfing.bloomConfig.isEnable = true;
 		//tonemap
-		initParam.graphicsConfing.tonemapConfig.isEnable = true;
+		initParam.graphicsConfing.tonemapConfig.isEnable = false;
 		initParam.graphicsConfing.tonemapConfig.luminance = 0.56f;
 
 		//SSR
@@ -100,7 +100,7 @@ namespace {
 		//Bloom
 		initParam.graphicsConfing.bloomConfig.isEnable = true;
 		//tonemap
-		initParam.graphicsConfing.tonemapConfig.isEnable = true;
+		initParam.graphicsConfing.tonemapConfig.isEnable = false;
 		initParam.graphicsConfing.tonemapConfig.luminance = 0.56f;
 		//SSR
 		initParam.graphicsConfing.ssrConfig.isEnable = true;

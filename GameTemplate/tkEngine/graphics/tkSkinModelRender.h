@@ -161,7 +161,7 @@ namespace prefab{
 		* 3Dモデルを表示したいワールド座標を指定してください。
 		*@param[in]	position		ワールド座標。
 		*/
-		void SetPosition(const CVector3& position)
+		void SetPosition(CVector3 position)
 		{
 			m_position = position;
 		}

@@ -1762,11 +1762,14 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Food.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Gamecamera.cpp" />
     <ClCompile Include="haikei.cpp" />
     <ClCompile Include="hoge.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="okasi.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Middle|Win32'">Create</PrecompiledHeader>
@@ -1789,15 +1792,21 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Food.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Gamecamera.h" />
     <ClInclude Include="haikei.h" />
     <ClInclude Include="hoge.h" />
+    <ClInclude Include="okasi.h" />
+    <ClInclude Include="Player.h" />
     <CLInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ResourceCompile Include="Game.rc" />
   </ItemGroup>
   <ItemGroup>
+    <MeshContentTask Include="Assets\modelData\#1ringo.fbx" />
+    <MeshContentTask Include="Assets\modelData\#2ringo.FBX" />
+    <MeshContentTask Include="Assets\modelData\chara.FBX" />
     <MeshContentTask Include="Assets\modelData\tageru.fbx" />
     <MeshContentTask Include="Assets\modelData\unityChan.fbx" />
   </ItemGroup>

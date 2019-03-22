@@ -161,9 +161,9 @@ namespace tkEngine{
 				return;
 			}
 			int index = GetLastAnimationControllerIndex();
-			if (m_animationPlayController[index].GetAnimClip() == nextClip) {
+			/*if (m_animationPlayController[index].GetAnimClip() == nextClip) {
 				return;
-			}
+			}*/
 			if (interpolateTime == 0.0f) {
 				//ï‚äÆÇ»ÇµÅB
 				m_numAnimationPlayController = 1;
