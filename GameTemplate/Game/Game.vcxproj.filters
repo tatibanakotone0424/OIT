@@ -24,7 +24,7 @@
     <ClCompile Include="haikei.cpp" />
     <ClCompile Include="Food.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="okasi.cpp" />
+    <ClCompile Include="FoodC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -37,7 +37,7 @@
     <ClInclude Include="haikei.h" />
     <ClInclude Include="Food.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="okasi.h" />
+    <ClInclude Include="FoodC.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Game.rc">
@@ -45,19 +45,16 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <MeshContentTask Include="Assets\modelData\unityChan.fbx">
+    <MeshContentTask Include="Assets\modelData\chara.FBX">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
     <MeshContentTask Include="Assets\modelData\tageru.fbx">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
-    <MeshContentTask Include="Assets\modelData\chara.FBX">
+    <MeshContentTask Include="Assets\modelData\ringo_1.fbx">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
-    <MeshContentTask Include="Assets\modelData\#1ringo.fbx">
-      <Filter>Assets\modelData</Filter>
-    </MeshContentTask>
-    <MeshContentTask Include="Assets\modelData\#2ringo.FBX">
+    <MeshContentTask Include="Assets\modelData\ringo_2.fbx">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
   </ItemGroup>

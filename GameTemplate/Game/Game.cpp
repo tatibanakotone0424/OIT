@@ -3,6 +3,7 @@
 #include "tkEngine/light/tkDirectionLight.h"
 #include"haikei.h"
 #include "Player.h"
+#include"Food.h"
 
 Game::Game()
 {
@@ -30,10 +31,34 @@ bool Game::Start()
 	NewGO<haikei>(0);
 	//キャラのインスタンスを作成する。
 	NewGO< Player>(0);
+
 	return true;
 }
 
 void Game::Update()
 {
+	wchar_t text[256];
+	swprintf(text, L"スコア \n""%02d");
+	m_fontRender->SetText(text);
+	m_fontRender->SetPosition({ 100.0f, 100.0f });
+	m_fontRender->SetPivot({ 0.0f, 0.0f });
+	tima++;
+	if (tima == 120) {
+		Food* food = NewGO<Food>(0,"フード");
+		//rand関数はランダムな整数を返してくる。
+		int r = rand();
+		//偶数
+		if (r % 2 == 0) {
+			food->type = 1;
+		}
+		//奇数
+		else {
+			food->type = 2;
+		}
 
+		tima = 0;
+	}	
+	/* {
+	(tima = 60)->NewGO<Food>(0);
+	}*/
 }

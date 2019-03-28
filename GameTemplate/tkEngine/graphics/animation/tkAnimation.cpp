@@ -30,7 +30,7 @@ namespace tkEngine{
 			ctr.Init(m_skeleton);
 		}
 		
-		Play(0);
+		//Play(0);
 		m_footIK.Init(m_skeleton);
 	}
 	/*!
