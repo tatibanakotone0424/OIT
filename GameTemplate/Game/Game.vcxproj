@@ -1766,6 +1766,7 @@
     <ClCompile Include="FoodC.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Gamecamera.cpp" />
+    <ClCompile Include="GameOver.cpp" />
     <ClCompile Include="haikei.cpp" />
     <ClCompile Include="hoge.cpp" />
     <ClCompile Include="main.cpp" />
@@ -1796,6 +1797,7 @@
     <ClInclude Include="FoodC.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Gamecamera.h" />
+    <ClInclude Include="GameOver.h" />
     <ClInclude Include="haikei.h" />
     <ClInclude Include="hoge.h" />
     <ClInclude Include="Player.h" />
@@ -1811,6 +1813,9 @@
   </ItemGroup>
   <ItemGroup>
     <ImageContentTask Include="Assets\sprite\dummy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Assets\sprite\Game.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
