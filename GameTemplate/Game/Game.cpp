@@ -57,13 +57,15 @@ void Game::Update()
 		//randŠÖ”‚Íƒ‰ƒ“ƒ_ƒ€‚È®”‚ð•Ôƒt‚µ‚Ä‚­‚éB
 		int r = rand();
 		//‹ô”
-		if (r % 2 == 0) {
-			food->type = 1;
+		if (r % 3 == 0) {
+			food->type = Food::TYPE_RED;
+		}else if (r % 3 == 2){
+			food->type = Food::TYPE_DOKU;
 		}
-		//Šï”
-		else {
-			food->type = 2;
-		}
+	    else
+	    {
+			food->type = Food::TYPE_BLUE;
+	    }
 
 		tima = 0;
 	}	

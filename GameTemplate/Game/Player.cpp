@@ -44,7 +44,7 @@ void Player::Update()
 	if (geme->GameOver == true) {
 		return;
 	}
-	if (joutai == 0) {
+	if (joutai == JOUTAI_TEISI) {
 		//プレイヤーが棒立ちしているときの処理
 		if (Pad(0).IsTrigger(enButtonA)) {
 			//赤
@@ -56,19 +56,23 @@ void Player::Update()
 				//見つかったなら
 				hoge->joutai = 1;
 				//もし食べ物が赤なら
-				if (hoge->type == 1) {
+				if (hoge->type == Food::TYPE_RED) {
 					Game* game = FindGO<Game>("スコア");
 					game->scoa++;
 				}
+				else if (hoge->type == Food::TYPE_DOKU) {
+					GameOver*over = NewGO<GameOver>(0, "ゲームオーバー");
+					geme->GameOver = true;
+				}
 				else
 				{
-					GameOver*over = NewGO<GameOver>(0,"ゲームオーバー");
+					GameOver*over = NewGO<GameOver>(0, "ゲームオーバー");
 					geme->GameOver = true;
 					/*m_spritRender = NewGO<prefab::CSpriteRender>(0);
 					m_spritRender->Init(L"sprite/Game.dds", 500, 500);*/
 				}
 			}
-			joutai = 1;
+			joutai = JOUTAI_MIGI;
 			m_modelRender->PlayAnimation(Animation_RHand);
 		}
 
@@ -79,28 +83,37 @@ void Player::Update()
 			if (hoge != nullptr) {
 				hoge->joutai = 2;
 				//もし食べ物が青なら
-				if (hoge->type == 2) {
+				if (hoge->type == Food::TYPE_BLUE) {
 					Game*game = FindGO<Game>("スコア");
 					game->scoa++;
-
 				}
-				else {
-					//GameOverクラスのインスタンスを作る。
-					GameOver*over = NewGO<GameOver>(0,"ゲームオーバー");
+				else if (hoge->type == Food::TYPE_DOKU) {
+					GameOver*over = NewGO<GameOver>(0, "ゲームオーバー");
 					geme->GameOver = true;
+				}
+
+				else {
+
+					//GameOverクラスのインスタンスを作る。
+					GameOver*over = NewGO<GameOver>(0, "ゲームオーバー");
+					geme->GameOver = true;
+
 					/*m_spritRender = NewGO<prefab::CSpriteRender>(0);
 					m_spritRender->Init(L"sprite/Game.dds",500,500);*/
 				}
 			}
-			joutai = 1;
+			joutai = JOUTAI_MIGI;
 			m_modelRender->PlayAnimation(Animation_LHand);
 		}
-	}
-	if (joutai == 1) {
-		//アニメーションの再生が終わったら、joutaiを0にする。
-		if (m_modelRender->IsPlayingAnimation()== false)
-		{
-			joutai = 0;
+
+
+		if (joutai == JOUTAI_MIGI) {
+			//アニメーションの再生が終わったら、joutaiを0にする。
+			if (m_modelRender->IsPlayingAnimation() == false)
+			{
+				joutai = JOUTAI_TEISI;
+			}
 		}
 	}
+
 }

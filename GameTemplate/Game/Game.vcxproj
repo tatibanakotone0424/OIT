@@ -1809,6 +1809,7 @@
     <MeshContentTask Include="Assets\modelData\chara.FBX" />
     <MeshContentTask Include="Assets\modelData\ringo_1.fbx" />
     <MeshContentTask Include="Assets\modelData\ringo_2.fbx" />
+    <MeshContentTask Include="Assets\modelData\rinngo_3.fbx" />
     <MeshContentTask Include="Assets\modelData\tageru.fbx" />
   </ItemGroup>
   <ItemGroup>

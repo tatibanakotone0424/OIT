@@ -59,6 +59,9 @@
     <MeshContentTask Include="Assets\modelData\ringo_2.fbx">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\rinngo_3.fbx">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
   </ItemGroup>
   <ItemGroup>
     <ImageContentTask Include="Assets\sprite\dummy.png">
